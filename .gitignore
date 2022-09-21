@@ -31,3 +31,10 @@ build/
 
 ### VS Code ###
 .vscode/
+
+# Mac specific
+.DS_Store
+.AppleDouble
+.LSOverride
+.idea/workspace.xml
+*.xml
