@@ -23,7 +23,7 @@ public class UserMediaListeningsService {
     //TODO: If user has no listenings then handle this null exception. Extenda/implementera exception och returnera något annat än Media
 
     public Media getTopMedia() {
-        int imaginaryUserId = 3;
+        int imaginaryUserId = 1;
         // Get real logged-in user
         int mediaIdTemp = userMediaListeningRepo.findMediaOnUserNative(imaginaryUserId);
         return mediaRepo.findMediaById(mediaIdTemp);
