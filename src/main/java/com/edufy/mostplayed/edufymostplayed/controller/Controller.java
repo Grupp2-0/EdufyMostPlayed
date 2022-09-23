@@ -5,9 +5,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-import java.util.List;
 /*
-* Klassen Controller sköter @GetMapping anropet från endpointen /listenings/gettopmedia som visar upp den inloggade användarens top 3 mest lyssnade låtar genom userMediaListeningsService.
+* Klassen Controller sköter @GetMapping anropet från endpointen /listenings/gettopmedia som returnerar den inloggade användarens mest lyssnade låt genom userMediaListeningsService.
 * @author Matilda Wintence, Jesper Johansson, Linda Djurström
 * Metoden getTopMedia returnerar en lista av Mediaobjekt.
 */
@@ -18,7 +17,7 @@ public class Controller {
     private UserMediaListeningsService userMediaListeningsService;
 
     @GetMapping("/gettopmedia")
-    public List<Media> getTopMedia() {
+    public Media getTopMedia() {
         return userMediaListeningsService.getTopMedia();
     }
 }
