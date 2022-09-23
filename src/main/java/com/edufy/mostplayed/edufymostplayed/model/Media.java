@@ -1,8 +1,10 @@
 package com.edufy.mostplayed.edufymostplayed.model;
-
 import javax.persistence.*;
 import java.time.LocalDate;
-
+/*
+ * Klassen Media har blivit autogenererad från databasen edufydatabase och är annoterad med @Entity.
+ * @author Matilda Wintence, Jesper Johansson.
+ */
 @Entity
 @Table(name = "media")
 public class Media {
@@ -51,5 +53,4 @@ public class Media {
     public void setMedianame(String medianame) {
         this.medianame = medianame;
     }
-
 }

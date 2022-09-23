@@ -1,7 +1,9 @@
 package com.edufy.mostplayed.edufymostplayed.model;
-
 import javax.persistence.*;
-
+/*
+ * Klassen User har blivit autogenererad från databasen edufydatabase och är annoterad med @Entity.
+ * @author Matilda Wintence, Jesper Johansson.
+ */
 @Entity
 @Table(name = "users")
 public class User {
@@ -12,7 +14,7 @@ public class User {
 
     @Column(name = "username", nullable = false, length = 50)
     private String username;
-
+    @Lob
     @Column(name = "role", nullable = false, length = 45)
     private String role;
 
@@ -50,5 +52,4 @@ public class User {
     public void setPassword(String password) {
         this.password = password;
     }
-
 }
