@@ -17,7 +17,7 @@ public class Controller {
     private UserMediaListeningsService userMediaListeningsService;
 
     @GetMapping("/gettopmedia")
-    public Media getTopMedia() {
-        return userMediaListeningsService.getTopMedia();
+    public Media getTopMedia(int userId) {
+        return userMediaListeningsService.getTopMedia(userId);
     }
 }
