@@ -25,6 +25,15 @@ public class UserMediaListening {
     @Column(name = "timeStamp")
     private Instant timeStamp;
 
+    public UserMediaListening() {
+    }
+
+    public UserMediaListening(Integer id, User useruserid, Media mediamediaid) {
+        this.id = id;
+        this.useruserid = useruserid;
+        this.mediamediaid = mediamediaid;
+    }
+
     public Integer getId() {
         return id;
     }

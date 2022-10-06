@@ -22,6 +22,16 @@ public class Media {
     @Column(name = "medianame", nullable = false, length = 100)
     private String medianame;
 
+    public Media() {
+    }
+
+    public Media(Integer id, String url, LocalDate releasedate, String medianame) {
+        this.id = id;
+        this.url = url;
+        this.releasedate = releasedate;
+        this.medianame = medianame;
+    }
+
     public Integer getId() {
         return id;
     }
